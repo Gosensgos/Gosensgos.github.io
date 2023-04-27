@@ -1,47 +1,33 @@
-form {
+main{
+    background-color: burlywood;
+}   
+   h2{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    flex-direction: column;
+    }
+    form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   }
+
+   form > div:not(:last-child){
+    flex: 1 1 40%;
+   }
+  
+  .footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 30px 0;
   }
   
-  label {
-    font-weight: bold;
-    margin-top: 10px;
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
-  
-  input, select, textarea {
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
-  
-  input[type="date"]::-webkit-inner-spin-button, 
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-  }
-  
-  textarea {
-    height: 100px;
-  }
-  
-  option {
-    padding: 5px;
-  }
-  
