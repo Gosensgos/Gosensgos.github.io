@@ -11,12 +11,40 @@ main{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    max-width: 30rem;
+    gap: 1rem;
+   }
+
+   input{
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 20px;
+   }
+
+   select{
+    border-radius: 20px;
    }
 
    form > div:not(:last-child){
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     flex: 1 1 40%;
    }
-  
+ 
+   form > div:last-of-type{
+    flex: 1 1 100%;
+   }
+   
+   
+form a{
+  padding: 1rem 12rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: black;
+  max-height: 2px;
+}
+
   .footer {
     background-color: #2d2d2d;
     color: #fff;
